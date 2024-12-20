@@ -1,0 +1,24 @@
+package placement;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StringCharDuplicate {
+	
+	public static void main(String[] args) {
+//		String a[]= {"apple","banana"};
+//		
+//		Arrays.stream(a).flatMap(b->b.chars().mapToObj(b->(char)b).collect(Collectors.groupingBy(b->b,Collectors.counting), null, null));
+		
+		Map<String,Integer> x=new HashMap<>();
+		
+		x.put("10-09-2024", 100);
+		x.put("12-09-2024", 70);
+		x.put("10-09-2024", 100);
+		x.put("7-09-2024", 120);
+		x.put("10-09-2024", 10);
+		
+		
+	}
+
+}

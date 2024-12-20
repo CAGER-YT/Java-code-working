@@ -1,0 +1,20 @@
+package interview;
+
+import java.util.Hashtable;
+
+public class Hash {
+	
+	public static void main(String[] args) {
+		Hashtable<Integer, String> h=new Hashtable();
+		h.put(101, "kumar");
+		h.put(104, "joel");
+		h.put(102, "santhosh");
+		h.put(103, "naveen");
+		h.put(105, "rajesh");
+		h.put(108, "sriram");
+		System.out.println(h);
+		h.remove("santhosh");
+		System.out.println(h);
+	}
+
+}

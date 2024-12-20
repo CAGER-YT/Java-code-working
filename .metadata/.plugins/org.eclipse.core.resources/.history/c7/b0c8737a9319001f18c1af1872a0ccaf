@@ -1,0 +1,15 @@
+package placement;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+public class ArrayListSort {
+	
+	public static void main(String[] args) {
+        List<String> s = Arrays.asList("Banana", "Apple", "Orange", "Mango", "Grape");
+        s.stream().sorted(Comparator.reverseOrder()).forEach(x->System.out.println(x));
+	}
+
+}
+

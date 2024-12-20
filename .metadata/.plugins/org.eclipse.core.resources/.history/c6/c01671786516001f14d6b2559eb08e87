@@ -1,0 +1,17 @@
+package placement;
+
+public class Permulation {
+	
+	public String swapString(String a,int i,int j) {
+		char []b=a.toCharArray();
+		char temp=b[i];
+		b[i]=b[j];
+		b[j]=temp;
+		
+		return String.valueOf(b);
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

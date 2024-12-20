@@ -1,0 +1,14 @@
+package lmsfor;
+
+public class Decrement {
+	public static void main(String[] args) {
+		for(int i=50;i>30;i--) {
+			System.out.print(i+" ");
+		}
+//		String a="one";
+//		for(int j=a.length();j>0;j--) {
+//			System.out.println(a.charAt(j));
+//		}
+	}
+
+}

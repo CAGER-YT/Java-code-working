@@ -1,0 +1,49 @@
+package placement;
+
+
+//public class ArrayReverse {
+//
+//}
+//class ArrayReverse {
+//    public static void main(String[] args) {
+////        String[] a={"One","Two"};
+//    	String b="one two";
+//    	String a[]=b.split(" ");
+//        Test t1=new Test();
+//        System.out.println(t1.arrayReverse(a));
+//    }
+//}
+//class Test{
+//    public String arrayReverse(String[] a){
+//        String temp ="";
+//        for(int i=0;i<a.length;i++){
+//            for(int j=a[i].length()-1;j>=0;j--){
+//                temp=temp+a[i].charAt(j);
+//            }
+//            temp=temp+" ";
+//        }
+//        return temp;
+//    }
+//}
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
+public class ArrayReverse {
+    public static void main(String[] args) throws Exception{
+        String sum = "2+3-1";
+        try {
+            // Create a ScriptEngineManager
+            ScriptEngineManager manager = new ScriptEngineManager();
+            // Obtain a ScriptEngine object for JavaScript
+            ScriptEngine engine = manager.getEngineByName("JavaScript");
+            // Evaluate the expression
+            Object result = engine.eval(sum);
+            // Print the result
+            System.out.println(result);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        }
+    }
+}

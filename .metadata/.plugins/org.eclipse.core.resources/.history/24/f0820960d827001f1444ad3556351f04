@@ -1,0 +1,11 @@
+package interview;
+
+import java.util.Hashtable;
+
+public class Hash {
+	
+	public static void main(String[] args) {
+		Hashtable<Integer, String> h=new Hashtable();
+	}
+
+}

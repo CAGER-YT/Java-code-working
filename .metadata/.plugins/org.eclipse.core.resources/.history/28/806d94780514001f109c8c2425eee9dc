@@ -1,0 +1,13 @@
+package test;
+
+public class SubClass {
+
+	SubClass c=new SubClass();
+	public int incNum(int n,int i) {
+		if(i!=n) {
+			i++;
+			c.incNum(n, i);
+		}
+		
+	}
+}

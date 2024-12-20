@@ -1,0 +1,11 @@
+package lmsfor;
+
+public class For_mul {
+	public static void main(String[] args) {
+		int i=0,value=10;
+		for(i=0;i<5;i++) {
+			System.out.println(value*i);
+		}
+	}
+
+}

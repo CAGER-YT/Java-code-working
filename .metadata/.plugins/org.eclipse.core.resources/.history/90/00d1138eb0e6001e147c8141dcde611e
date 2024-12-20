@@ -1,0 +1,15 @@
+package lmsfor;
+
+public class prime {
+	public static void main(String[] args) {
+		int i;
+		for(i=2;i<9;i++) {
+			if (i%9==0) {
+				System.out.println("Is prime");
+			}else {
+				System.out.println("Is not a prime");
+			}
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+package placement;
+
+import java.util.Stack;
+
+public class BracketCheck {
+
+	public static void main(String[] args) {
+		
+		Stack<Character>x=new Stack<>();
+		String a="{}([)[]]";
+		
+		boolean c=a.chars().mapToObj(b->(char) b).allMatch(b->{
+			if("{([".indexOf(b) != -1) {
+				x.push(b);
+				return true;
+			}else if("])}".indexOf(b) != -1) {
+				if(x.isEmpty()) {
+					return false;
+				}
+				char top=x.pop();
+				return (top=='{'&& b=='}')||(top=='['&& b==']')||(top=='('&& b==')');
+			}
+			return true;
+		});
+		System.out.println(c && x.isEmpty() ? "balanced":"not balanced");
+	}
+}

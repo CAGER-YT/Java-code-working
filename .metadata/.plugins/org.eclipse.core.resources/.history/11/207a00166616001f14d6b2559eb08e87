@@ -1,0 +1,35 @@
+package placement;
+
+public class Permulation {
+	
+	public static String swapString(String a,int i,int j) {
+		char []b=a.toCharArray();
+		char temp=b[i];
+		b[i]=b[j];
+		b[j]=temp;
+		return String.valueOf(b);
+	}
+	public static void main(String[] args) {
+		String a="god";
+		generateString(a, 0, a.length()-1);
+		
+	}
+	
+	public static void generateString(String a,int s,int e) {
+		if(s==e-1) {
+			System.out.println(a);
+		}
+		else 
+		{
+			for(int j=0;j<a.length();j++) {
+			for(int i=s;i<e;i++) {
+				a=swapString(a, s, i);
+				generateString(a, s+1, e);
+				a=swapString(a, s, i);
+				
+			}
+		}
+		}
+	}
+
+}

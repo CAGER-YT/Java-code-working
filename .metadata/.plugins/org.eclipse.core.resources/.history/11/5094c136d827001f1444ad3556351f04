@@ -1,0 +1,9 @@
+package interview;
+
+public class Hash {
+	
+	public static void main(String[] args) {
+		Hashtable h=new Hashtable();
+	}
+
+}

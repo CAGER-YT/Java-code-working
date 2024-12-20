@@ -1,0 +1,6 @@
+package placement;
+
+public interface Functional {
+
+	static int operation(int a,int b);
+}

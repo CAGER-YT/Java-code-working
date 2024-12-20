@@ -1,0 +1,7 @@
+package placement;
+
+import  java.util.stream.*;
+public class StringCount {
+
+	String a="helloh";
+}

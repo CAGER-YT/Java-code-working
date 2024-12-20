@@ -1,0 +1,17 @@
+package task;
+
+public class RunThread implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread is Running");
+	}
+
+	public static void main(String[] args) {
+		RunThread r1=new RunThread();
+		Thread t1=new Thread();
+		t1.start();
+		System.out.println("Main Thread");
+	}
+}

@@ -1,0 +1,11 @@
+package test;
+
+public class SubClass {
+
+	public int incNum(int n,i) {
+		int i;
+		if(i==n) {
+			
+		}
+	}
+}

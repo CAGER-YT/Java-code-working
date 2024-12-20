@@ -1,0 +1,12 @@
+package lmsfor;
+
+public class For_mul {
+	public static void main(String[] args) {
+		int i,value=10;
+		for(i=1;i<5;i++) {
+//			System.out.print(value*i);
+			System.out.print(i);
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IndexOut.java&apos; to &apos;uncheckedexception.IndexOut.java&apos;&#x0D;&#x0A;- Original project: &apos;Exception&apos;&#x0D;&#x0A;- Destination element: &apos;uncheckedexception.IndexOut.java&apos;&#x0D;&#x0A;- Original element: &apos;uncheckedexception.IndexOut.java&apos;" description="Copy compilation unit" destination="/src&lt;uncheckedexception{IndexOut.java" element1="/src&lt;uncheckedexception{IndexOut.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1712983581178" units="1" version="1.0"/>
+</session>

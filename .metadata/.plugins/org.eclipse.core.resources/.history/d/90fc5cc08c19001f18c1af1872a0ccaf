@@ -1,0 +1,16 @@
+package placement;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class StringReverseEachWordUsingStream {
+	
+	public static void main(String[] args) {
+		String a="This is a Java Program";
+		String r=Arrays.stream(a.split(" "))
+				.map(x->new StringBuilder(x).reverse())
+				.collect(Collectors.joining(" "));
+		System.out.println(r);
+	}
+
+}

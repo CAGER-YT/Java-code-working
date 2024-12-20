@@ -1,0 +1,9 @@
+package test;
+
+public class SubClass {
+
+	public int incNum() {
+		int i=0;
+		return i++; 
+	}
+}

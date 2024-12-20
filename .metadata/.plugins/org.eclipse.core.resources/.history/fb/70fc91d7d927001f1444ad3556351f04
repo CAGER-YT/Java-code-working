@@ -1,0 +1,32 @@
+package interview;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+
+public class Hash {
+	
+	public static void main(String[] args) {
+		Hashtable<Integer, String> h=new Hashtable();
+		h.put(101, "kumar");
+		h.put(101, "kumar");
+		h.put(104, "joel");
+		h.put(102, "santhosh");
+		h.put(103, "naveen");
+		h.put(105, "rajesh");
+		h.put(108, "sriram");
+//		h.put(null, null);
+		System.out.println(h);
+		h.remove(102);
+		System.out.println(h);
+        HashMap<Integer, String> c = new HashMap<>();
+        c.put(101, "kumar");
+        c.put(101, "kumar");  // This will replace the previous entry with the same key
+        c.put(104, "joel");
+        c.put(102, "santhosh");
+        c.put(103, "naveen");
+        c.put(105, "rajesh");
+        c.put(108, "Sriram");
+        System.out.println(c);
+	}
+
+}

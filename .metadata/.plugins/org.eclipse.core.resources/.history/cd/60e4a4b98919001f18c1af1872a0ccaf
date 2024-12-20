@@ -1,0 +1,15 @@
+package placement;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class FindAge {
+
+	public static void main(String[] args) {
+		LocalDate s= LocalDate.parse("18-01-2000");
+		
+		LocalDate n=LocalDate.now();
+		Period age =Period.between(s, n);
+		System.out.println(age);
+	}
+}

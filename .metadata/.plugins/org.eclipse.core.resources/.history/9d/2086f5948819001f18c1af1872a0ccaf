@@ -1,0 +1,10 @@
+package placement;
+
+import java.util.List;
+
+public class StreamEven {
+
+	public static void main(String[] args) {
+		List<Integer> s=Arrays.asList(2,3,4,5);
+	}
+}

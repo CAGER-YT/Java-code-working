@@ -1,0 +1,11 @@
+package lmsfor;
+
+public class Formul {
+	public static void main(String[] args) {
+		for(int i=0;i<3;i++) {
+			int result=i*i;
+			System.out.println(result);
+		}
+	}
+
+}

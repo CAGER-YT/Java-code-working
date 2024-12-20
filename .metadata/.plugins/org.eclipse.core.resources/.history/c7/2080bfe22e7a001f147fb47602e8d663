@@ -1,0 +1,15 @@
+package placement;
+
+import java.util.HashMap;
+
+public class StringCharDuplicate {
+	
+	public static void main(String[] args) {
+//		String a[]= {"apple","banana"};
+//		
+//		Arrays.stream(a).flatMap(b->b.chars().mapToObj(b->(char)b).collect(Collectors.groupingBy(b->b,Collectors.counting), null, null));
+		
+		Map<String,Integer> x=new HashMap<K, V>();
+	}
+
+}

@@ -1,0 +1,20 @@
+package placement;
+
+import java.util.Arrays;
+
+public class ParrallelAndSEquential {
+
+	
+	public static void main(String[] args) {
+		
+		int[]a=new int[1000000];
+		Arrays.fill(a, 2);
+		System.out.println(a);
+		long sT=System.currentTimeMillis();
+		int sum=Arrays.stream(a).parallel().map(b->b*2).sum();
+		long eT=System.currentTimeMillis();
+		
+		System.out.println(sum);
+		System.out.println("Time Taken:"+(eT-sT));
+	}
+}

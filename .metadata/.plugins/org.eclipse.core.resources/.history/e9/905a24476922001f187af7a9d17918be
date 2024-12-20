@@ -1,0 +1,41 @@
+package test;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.util.Scanner;
+
+public class RPGAssetGenerator {
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // Get user input for tile size
+    System.out.print("Enter desired tile size (pixels): ");
+    int size = scanner.nextInt();
+
+    // Create a new image
+    BufferedImage image = new BufferedImage(size, size, BufferedImage.TYPE_INT_ARGB);
+
+    // Generate a checkerboard pattern (replace with your desired pattern)
+    for (int y = 0; y < size; y++) {
+      for (int x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0) {
+          image.setRGB(x, y, Color.WHITE.getRGB());
+        } else {
+          image.setRGB(x, y, Color.GRAY.getRGB());
+        }
+      }
+    }
+
+    // Save the image (replace "tileset.png" with your desired filename)
+    try {
+      javax.imageio.ImageIO.write(image, "png", new java.io.File("tileset.png"));
+      System.out.println("Tileset generated successfully!");
+    } catch (Exception e) {
+      System.out.println("Error saving image: " + e.getMessage());
+    }
+
+    scanner.close();
+  }
+}
+
